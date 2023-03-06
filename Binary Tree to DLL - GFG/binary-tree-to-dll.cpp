@@ -123,7 +123,7 @@ class Solution
             if(s==NULL) return;
             DFS(s->left);
             t->data = s->data;
-            t->right = new Node(0);
+            t->right = s;
             t->right->left = t;
             t = t->right;
             DFS(s->right);
